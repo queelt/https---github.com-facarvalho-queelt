@@ -1,0 +1,183 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.queelt</groupId>
+	<artifactId>queelt</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>queelt</name>
+	
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<jstl.version>1.2</jstl.version>
+		<jackson.version>2.6.0</jackson.version>
+		<javax.servlet.version>2.5</javax.servlet.version>
+		<spring.data.version>1.7.1.RELEASE</spring.data.version>
+		<spring.version>4.2.0.RELEASE</spring.version>
+		<spring.hateoas.version>0.18.0.RELEASE</spring.hateoas.version>
+		<junit.version>3.8.1</junit.version>
+		<java.version>1.8</java.version>
+		<jsoup.version>1.7.3</jsoup.version>
+		<commons.lang.version>2.6</commons.lang.version>
+		<spring.security.oauth.version>1.0.0.RELEASE</spring.security.oauth.version>
+		<spring.security.version>3.2.5.RELEASE</spring.security.version>
+		<spring.security.version>3.2.5.RELEASE</spring.security.version>
+		<spring.oauth.version>2.0.1.RELEASE</spring.oauth.version>
+		<swagger.version>1.0.2</swagger.version>
+	</properties>
+
+<dependencyManagement>
+	<dependencies>
+			<dependency>
+				<groupId>com.mangofactory</groupId>
+				<artifactId>swagger-springmvc</artifactId>
+				<version>${swagger.version}</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>org.springframework.security</groupId>
+				<artifactId>spring-security-core</artifactId>
+				<version>${spring.security.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.security</groupId>
+				<artifactId>spring-security-web</artifactId>
+				<version>${spring.security.version}</version>
+			</dependency>
+
+			<!-- Spring Security Oauth -->
+			<dependency>
+				<groupId>org.springframework.security.oauth</groupId>
+				<artifactId>spring-security-oauth2</artifactId>
+				<version>${spring.oauth.version}</version>
+			</dependency>
+		<dependency>
+			<groupId>org.jsoup</groupId>
+			<artifactId>jsoup</artifactId>
+			<version>${jsoup.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>${commons.lang.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-expression</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aspects</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-mongodb</artifactId>
+			<version>${spring.data.version}</version>
+		</dependency>
+
+		
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>${javax.servlet.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>${jstl.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.hateoas</groupId>
+			<artifactId>spring-hateoas</artifactId>
+			<version>${spring.hateoas.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-core</artifactId>
+			<version>${spring.security.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>${spring.security.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>${spring.security.version}</version>
+		</dependency>
+
+		
+		<dependency>
+			<groupId>org.springframework.security.oauth</groupId>
+			<artifactId>spring-security-oauth2</artifactId>
+			<version>${spring.oauth.version}</version>
+		</dependency>
+		
+
+	</dependencies>
+</dependencyManagement>
+	
+</project>
